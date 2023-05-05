@@ -20,7 +20,7 @@
         
         function senhaDeAcesso() {
             let senha = 2678;
-            if (senha == prompt("Qual é a senha?")){
+            if (senha == prompt("Qual é a senha?(2678)")){
                 inicio();
             } else {
                 alert("Senha incorreta!");
