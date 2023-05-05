@@ -18,13 +18,13 @@
         let nome = prompt("Qual é o seu nome?") || "Desconhecido";
         alert(`Bem vindo ao ${nome_hotel}, ${nome}. É um imenso prazer ter você por aqui!`);
         
-        function senha() {
+        function senhaDeAcesso() {
             let senha = 2678;
             if (senha == prompt("Qual é a senha?")){
                 inicio();
             } else {
                 alert("Senha incorreta!");
-                senha();
+                senhaDeAcesso();
             }
         }
 
@@ -479,7 +479,7 @@
     inicio();
     }
 
-    senha();
+    senhaDeAcesso();
     
         </script>
     
