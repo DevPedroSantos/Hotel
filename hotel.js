@@ -5,7 +5,7 @@ var password = prompt(`Certo ${username}, digite a sua senha:`);
 
 
 while(password !== "2678") {
-    alert(`Ops! ${username}, não foi possível achar um login válido!`)
+    alert(`Ops! ${username}, não foi possível achar um login válido!`);
     username = prompt(`Digite seu usuário novamente:`);
     password = prompt(`${username}, digite sua senha novamente:`);
 }
