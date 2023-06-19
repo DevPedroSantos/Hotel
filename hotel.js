@@ -65,7 +65,7 @@ function inicio() {
 function reserva_quartos() {
     var rateDaily = parseFloat(prompt("Qual o valor padrão da diária?"));
     while(!rateDaily || rateDaily <= 0) {
-        rateDaily = parseFloat(prompt(`Ops! 0 valor ${rateDaily} é inválido, ${username}! Tente novamente:`))
+        rateDaily = parseFloat(prompt(`Ops! 0 valor ${rateDaily} é inválido, ${username}! Tente novamente:`));
     }
 
     var daily = parseInt(prompt("Quantas diárias serão necessárias?"));
