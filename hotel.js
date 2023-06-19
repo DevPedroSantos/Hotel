@@ -1,6 +1,6 @@
 var hotel = prompt("Olá! Seja bem-vindo(a)! Qual será o nome do hotel?") || "StarsInSky";
 var username = prompt(`Olá! Sistema do Hotel ${hotel}\nQual seu usuário?`);
-var password = prompt(`Certo ${username}, digite a sua senha:`);
+var password = prompt(`Certo ${username}, digite a sua senha: (2678)`);
 
 
 
@@ -70,7 +70,7 @@ function reserva_quartos() {
 
     var daily = parseInt(prompt("Quantas diárias serão necessárias?"));
     while(!daily || daily <= 0 || daily > 30) {
-        daily = parseInt(prompt(alert(`Ops! A diaria ${daily} é inválida, ${username}! Tente novamente:`)));
+        daily = parseInt(prompt(`Ops! A diaria ${daily} é inválida, ${username}! Tente novamente:`));
     }
     
     alert(`O valor de ${daily} dia${daily > 1 ? "s" : ""} de hospedagem é de: ${Number(daily * rateDaily).toLocaleString("pt-br", { style: "currency", currency: "BRL" })}`);
